@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+}
+.container {
+  position: relative;
+}
+.section1 {
+  background-color: rgb(223, 148, 49);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid rgb(223, 148, 49);
+  margin-bottom: 0.4vh;
+  min-height: 20%;
+}
+.button_section {
+  margin-right: 3vh;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px 8px;
+  border-radius: 12px;
+  position: relative;
+  top: 40%;
+  margin-left: 2vh;
+}
+/* section 2 part */
+.section2 {
+  background: linear-gradient(135deg, rgb(223, 148, 49), rgb(189, 163, 129));
+  height: 100vh;
+  position: relative;
+}
+.content {
+  position: absolute;
+  top: 5%;
+}
+.box-container {
+  position: absolute;
+  top: 20%;
+  width: 60%;
+}
+.box1,
+.box3,
+.box5 {
+  width: 200px;
+  height: 100px;
+  background-color: green;
+  margin: 2vh;
+  font-size: 32px;
+  text-align: center;
+}
+.box2,
+.box4 {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  margin: 2vh;
+  font-size: 32px;
+  text-align: center;
+}
+
+.box1 {
+  animation: box1 4s linear infinite;
+  position: relative;
+}
+@keyframes box1 {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 12.5vw;
+  }
+  50% {
+    left: 25vw;
+  }
+  75% {
+    left: 37.5vw;
+  }
+  100% {
+    left: 50vw;
+  }
+}
+.box2 {
+  animation: box2 4s ease infinite;
+  position: relative;
+}
+@keyframes box2 {
+  0% {
+    left: 0;
+  }
+  /* 25% {
+    left: 200px;
+  }
+  50% {
+    left: 400px;
+  }
+  75% {
+    left: 600px;
+  } */
+  100% {
+    left: 50vw;
+  }
+}
+
+.box3 {
+  animation: box3 4s ease-in infinite;
+  position: relative;
+}
+@keyframes box3 {
+  0% {
+    left: 0;
+  }
+  /* 25% {
+    left: 200px;
+  }
+  50% {
+    left: 400px;
+  }
+  75% {
+    left: 600px;
+  } */
+  100% {
+    left: 50vw;
+  }
+}
+
+.box4 {
+  animation: box4 4s ease-out infinite;
+  position: relative;
+}
+@keyframes box4 {
+  0% {
+    left: 0;
+  }
+  /* 25% {
+    left: 200px;
+  }
+  50% {
+    left: 400px;
+  }
+  75% {
+    left: 600px;
+  } */
+  100% {
+    left: 50vw;
+  }
+}
+
+.box5 {
+  animation: box5 4s ease-in-out infinite;
+  position: relative;
+}
+@keyframes box5 {
+  0% {
+    left: 0;
+  }
+  /* 25% {
+    left: 200px;
+  }
+  50% {
+    left: 400px;
+  }
+  75% {
+    left: 600px;
+  } */
+  100% {
+    left: 50vw;
+  }
+}
